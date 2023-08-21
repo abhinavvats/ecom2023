@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MithilaArt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="header">
+        <div class="container" style="margin-bottom: 30px;">
+            <div class="navbar">
+                <div class="logo">
+                    <div style="vertical-align: middle;
+          border-style: none">
+                    
+                    </div>
+                    <div>
+
+                        <h2 class="titl home-title">Mithila Arts</h2>
+                        <p class="home-title" style="font-size: 20px;">The Art of Mithilanchal</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px;" height="30px" />
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+            </div>
+            <div class="row">
+               
+            </div>
+        </div>
+    </div>
+    <!-- <div class="all-products row">
+        <h2 class="title">All Products</h2>
+       <select>
+        <option value="">relevance</option>
+        <option value="">low to high</option>
+        <option value="">high to low</option>
+        <option value="">popularity</option>
+       </select>
+    </div> -->
+    <div class="small-container" style="background-color: #c1dfe2;">
+        <h2 class="title">All Products</h2>
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="images/12.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/13.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/14.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/11.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div>
+            
+            <div class="col-4">
+                            <img src="images/1.png">
+                            <h4>Peacock</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p><b>&#8377 2999</b></p>
+                        </div>
+             <div class="col-4">
+                            <img src="images/8.png">
+                            <h4>Mayur</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p><b>&#8377 3549</b></p>
+                        </div>
+             <div class="col-4">
+                            <img src="images/7.png">
+                            <h4>Radha Krishna</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p><b>&#8377 5999</b></p>
+                        </div>
+            <div class="col-4">
+                            <img src="images/4.png">
+                            <h4>Mithila painting</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p><b>&#8377 5999</b></p>
+                        </div>
+           
+            <div class="col-4">
+                <img src="images/10.png">
+                <h4>Ganesha painting</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p><b>&#8377 1199</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/photo 275 19-12-9.jpg">
+                <h4>Doli Kahar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><b>&#8377 1049</b></p>
+            </div>
+           
+            <div class="col-4">
+                <img src="images/photo 275 19-20-30.jpg">
+                <h4>Lord Krishna Enjoying</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><b>&#8377 1249</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/9.png">
+                <h4>Ram vivah</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 999</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/1.png">
+                <h4>Peacock</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 2999</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/2.png">
+                <h4>Fish</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p><b>&#8377 4999</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/3.png">
+                <h4>Sita Mithila painting</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><b>&#8377 2749</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/4.png">
+                <h4>Mithila painting</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 5999</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/12.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/13.png">
+                <h4>Vivah kobar</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b> &#8377 2599</b></p>
+            </div><div class="col-4">
+                <img src="images/10.png">
+                <h4>Ganesha painting</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p><b>&#8377 1199</b></p>
+            </div><div class="col-4">
+                <img src="images/photo 275 19-20-30.jpg">
+                <h4>Lord Krishna Enjoying</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><b>&#8377 1249</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/8.png">
+                <h4>Mayur</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 3549</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/5.png">
+                <h4>Mithila painting</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 3249</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/6.png">
+                <h4>Mayur</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 2699</b></p>
+            </div>
+            <div class="col-4">
+                <img src="images/7.png">
+                <h4>Radha Krishna</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><b>&#8377 5999</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+    </div>
+   
+       <!-- footer -->
+       <div class="footer" style="margin-top: 15px;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+               
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li class="useful-links">Coupons</li>
+                        <li class="useful-links">Blog Post</li>
+                        <li class="useful-links">Return Policy</li>
+                        <!-- <li class="useful-links">Contact Us</li> -->
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links ">
+                        <a href="https://www.facebook.com" class="facebook "><i
+                                class="fa fa-facebook "></i></a>
+                        <a href="https://www.instagram.com" class="instagram "><i
+                                class="fa fa-instagram "></i></a>
+                        <a href=" https://twitter.com" class="twitter "><i
+                                class="fa fa-twitter "></i></a>
+                        <a href="www.google.com" class="google-plus "><i 
+                                class="fa fa-pinterest "></i></a>
+                        <a href="https://www.linkedin.com" class="linkedin "><i
+                                class="fa fa-linkedin "></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 <a
+                    href="https://www.linkedin.com/in/abhinav-kumar-a84369186/">abhinav</a> </p>
+        </div>
+    </div>
+</body>
+</html>
